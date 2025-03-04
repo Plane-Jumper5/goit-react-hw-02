@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  background-color: #92c3f3;
+}
+
+.profile {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.profile__info {
+  padding: 15px;
+  background: #ffffff;
+}
+
+.profile__avatar {
+  width: 100px;
+  border-radius: 500%;
+  border: 3px solid black;
+  background-color: #a9a8a8;
+  margin-bottom: 5px;
+}
+
+.profile__name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+.profile__tag {
+  font-size: 20px;
+  color: #6b6b6b;
+}
+
+.profile__location {
+  font-size: 20px;
+  color: #6b6b6b;
+}
+
+/* Контейнер для трьох колонок */
+.profile__stats {
+  display: flex;
+  justify-content: space-between;
+  background: #d4d2d2;
+  border-top: 1px solid #504e4e;
+  border-bottom: 1px solid #504e4e;
+  padding: 15px 0;
+}
+
+.profile__stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.3%; /* Рівномірний розподіл */
+  padding: 10px 0;
+  border-right: 1px solid #504e4e;
+}
+
+/* Видаляємо праву межу у останнього елемента */
+.profile__stats li:last-child {
+  border-right: none;
+}
+
+/* Стилі для кожного показника */
+.label {
+  font-size: 14px;
+  color: #2a2a2a;
+}
+
+.quantity {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+/* Індивідуальні кольори */
+.stat-followers {
+  color: black;
+}
+
+.stat-views {
+  color: black;
+}
+
+.stat-likes {
+  color: black;
+}
